@@ -1,0 +1,68 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+**/**/node_modules
+**/**/.storybook/node_modules
+
+# docusaurus
+apps/website/.docusaurus
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.husky/
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+.eslintcache
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+#
+# compiled output
+**/**/dist
+**/**/build
+**/**/tmp
+**/**/temp
+**/**/es
+**/**/.rush
+**/**/.heft
+**/**/*.build.log
+**/**/*.error.log
+**/**/tsconfig.tsbuildinfo
+**/**/*.css.d.ts
+**/**/*.less.d.ts
+
+# Rush temporary files
+common/deploy/
+common/temp/
+common/autoinstallers/*/.npmrc
+/common/changes/
+
+

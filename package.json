@@ -1,0 +1,30 @@
+{
+  "name": "otp-intl",
+  "version": "0.0.1",
+  "description": "I18N tools for universal javascript apps, easy use & better api;",
+  "main": "lib/index.js",
+  "author": "zht",
+  "keywords": [
+    "I18N",
+    "intl",
+    "G11N",
+    "L10N"
+  ],
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "dependencies": {
+    "intl-messageformat": "^2.2.0",
+    "lodash.get": "^4.4.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.8"
+  },
+  "license": "MIT",
+  "files": [
+    "lib",
+    "src"
+  ]
+}
