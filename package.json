@@ -1,6 +1,6 @@
 {
   "name": "otp-intl",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "I18N tools for universal javascript apps, easy use & better api;",
   "main": "lib/index.js",
   "author": "zht",

@@ -1,12 +1,7 @@
 import IntlMessageFormat from 'intl-messageformat';
-import lodashGet from 'lodash.get';
+import * as lodashGet from 'lodash.get';
 import Observer from './Observer';
-
 class I18N {
-  __lang__;
-  __metas__;
-  __data__;
-  __defaultKey__;
   constructor(lang, metas, defaultKey) {
     this.__lang__ = lang;
     this.__metas__ = metas;
@@ -42,13 +37,7 @@ class I18N {
       return '';
     }
     return str.replace(/\{(.+?)\}/g, (match, p1) => {
-      return this.getProp(
-        {
-          ...this.__data__,
-          ...args
-        },
-        p1
-      );
+      return this.getProp(Object.assign({}, this.__data__, args), p1);
     });
   }
   get(str, args) {
@@ -70,17 +59,11 @@ class I18N {
     }
   }
 }
-
 const IntlFormat = {
-  init:(
-    lang,
-    metas,
-    defaultKey
-  ) => {
+  init: (lang, metas, defaultKey) => {
     const i18n = new I18N(lang, metas, defaultKey);
     return Observer(i18n, defaultKey);
   }
 };
-
 export { IntlFormat };
 export default IntlFormat;
