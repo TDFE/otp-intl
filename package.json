@@ -1,6 +1,6 @@
 {
   "name": "otp-intl",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "I18N tools for universal javascript apps, easy use & better api;",
   "main": "lib/index.js",
   "author": "zht",
@@ -11,7 +11,7 @@
     "L10N"
   ],
   "scripts": {
-    "build": "babel src -d lib"
+    "build": "babel src -d lib && node ./build.js"
   },
   "dependencies": {
     "intl-messageformat": "^2.2.0",
